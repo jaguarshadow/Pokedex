@@ -1,0 +1,65 @@
+﻿@model PokemonData.Pokemon
+
+@{
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>Pokemon Details</h4>
+        <hr />
+
+        <dl class="dl-horizontal">
+            <dd>
+                <img src=@Model.Sprite  width="200"  height="200"/>
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Types)
+            </dt>
+
+            <dd>
+                @foreach (var item in Model.Types)
+                {
+                    @item.Type.Name <br/>
+                }
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Weight)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Weight)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Height)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Height)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>
