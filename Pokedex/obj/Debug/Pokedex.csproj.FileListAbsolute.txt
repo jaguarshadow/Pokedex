@@ -80,5 +80,3 @@ C:\dev\Pokedex\Pokedex\Pokedex\obj\Debug\Pokedex.csproj.CoreCompileInputs.cache
 C:\dev\Pokedex\Pokedex\Pokedex\obj\Debug\Pokedex.csproj.CopyComplete
 C:\dev\Pokedex\Pokedex\Pokedex\obj\Debug\Pokedex.dll
 C:\dev\Pokedex\Pokedex\Pokedex\obj\Debug\Pokedex.pdb
-C:\dev\Pokedex\Pokedex\Pokedex\bin\System.Net.Http.Formatting.dll
-C:\dev\Pokedex\Pokedex\Pokedex\bin\System.Net.Http.Formatting.xml

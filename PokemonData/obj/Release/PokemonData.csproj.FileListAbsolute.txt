@@ -1,0 +1,12 @@
+C:\dev\pokedex\PokeDex\PokemonData\bin\Release\PokemonData.dll.config
+C:\dev\pokedex\PokeDex\PokemonData\bin\Release\PokemonData.dll
+C:\dev\pokedex\PokeDex\PokemonData\bin\Release\PokemonData.pdb
+C:\dev\pokedex\PokeDex\PokemonData\bin\Release\Newtonsoft.Json.dll
+C:\dev\pokedex\PokeDex\PokemonData\bin\Release\System.Net.Http.Formatting.dll
+C:\dev\pokedex\PokeDex\PokemonData\bin\Release\Newtonsoft.Json.xml
+C:\dev\pokedex\PokeDex\PokemonData\bin\Release\System.Net.Http.Formatting.xml
+C:\dev\pokedex\PokeDex\PokemonData\obj\Release\PokemonData.csproj.AssemblyReference.cache
+C:\dev\pokedex\PokeDex\PokemonData\obj\Release\PokemonData.csproj.CoreCompileInputs.cache
+C:\dev\pokedex\PokeDex\PokemonData\obj\Release\PokemonData.csproj.CopyComplete
+C:\dev\pokedex\PokeDex\PokemonData\obj\Release\PokemonData.dll
+C:\dev\pokedex\PokeDex\PokemonData\obj\Release\PokemonData.pdb

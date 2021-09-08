@@ -10,6 +10,7 @@ namespace PokemonData
 {
     public class PokemonProcessor
     {
+        private const int MAX_POKEMON = 898;
         public static Pokemon LoadPokemon(int id)
         {
             var client = ApiHelper.ApiClient;
@@ -35,33 +36,13 @@ namespace PokemonData
 
         public static PokemonList GetAllPokemon()
         {
-            int pokemonCount = 0;
-
-            string url = $"http://pokeapi.co/api/v2/pokemon/";
             var client = ApiHelper.ApiClient;
-            //GET COUNT
-            var responseTask = client.GetAsync("?limit=0");
+
+            // GET LIST
+            var responseTask = client.GetAsync($"?limit={MAX_POKEMON}");
             responseTask.Wait();
 
             var result = responseTask.Result;
-            if (result.IsSuccessStatusCode)
-            {
-                var readTask = result.Content.ReadAsAsync<PokemonList>();
-                readTask.Wait();
-
-                pokemonCount = readTask.Result.Count;
-            }
-            else
-            {
-                // web api sent error response
-                throw new Exception(result.ReasonPhrase);
-            }
-
-            // GET LIST
-            responseTask = client.GetAsync($"?limit={pokemonCount}");
-            responseTask.Wait();
-
-            result = responseTask.Result;
             if (result.IsSuccessStatusCode)
             {
                 var readTask = result.Content.ReadAsStringAsync();
