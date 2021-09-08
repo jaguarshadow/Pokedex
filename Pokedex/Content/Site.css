@@ -23,12 +23,27 @@ textarea {
     max-width: 280px;
 }
 
-.my-custom-scrollbar {
-    position: relative;
+.tableFixHead {
+    overflow-y: auto;
     height: 600px;
-    overflow: auto;
 }
 
-.table-wrapper-scroll-y {
-    display: block;
+    .tableFixHead thead th {
+        position: sticky;
+        top: 0px;
+    }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: #eee;
 }
