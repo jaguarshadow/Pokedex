@@ -26,6 +26,8 @@ namespace PokemonData
 
         public string Sprite { get; set; }
 
+        public string Description { get; set; }
+
         public void Initialize()
         {
             TextInfo ti = new CultureInfo("en-US", false).TextInfo;

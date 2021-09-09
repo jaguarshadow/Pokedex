@@ -9,4 +9,3 @@ C:\dev\Pokedex\Pokedex\PokemonData\bin\Debug\System.Net.Http.Formatting.dll
 C:\dev\Pokedex\Pokedex\PokemonData\bin\Debug\Newtonsoft.Json.xml
 C:\dev\Pokedex\Pokedex\PokemonData\bin\Debug\System.Net.Http.Formatting.xml
 C:\dev\Pokedex\Pokedex\PokemonData\obj\Debug\PokemonData.csproj.CopyComplete
-C:\dev\Pokedex\Pokedex\PokemonData\obj\Debug\PokemonData.csproj.AssemblyReference.cache

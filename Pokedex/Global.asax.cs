@@ -18,6 +18,7 @@ namespace Pokedex
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             ApiHelper.InitializeClient();
+            
         }
     }
 }

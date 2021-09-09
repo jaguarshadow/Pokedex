@@ -45,5 +45,36 @@ td {
 }
 
 th {
-    background: #eee;
+    background: grey;
+}
+
+html, body {
+    height: 100%;
+}
+
+.detail-grid-container {
+    width: 90%;
+    margin: 50px 0px 0px 0px;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 200px auto auto auto;
+    grid-template-rows: 200px, 200px;
+    padding: 5px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.detail-grid-container img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 15px;
+}
+
+.detail-grid-container p {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 5px;
+    vertical-align: middle;
 }
