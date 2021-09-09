@@ -186,6 +186,7 @@ optgroup {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+  overflow-y: scroll;
 }
 td,
 th {
@@ -1451,7 +1452,7 @@ dt {
 dd {
   margin-left: 0;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -1464,7 +1465,7 @@ dd {
   .dl-horizontal dd {
     margin-left: 180px;
   }
-}
+}*/
 abbr[title],
 abbr[data-original-title] {
   cursor: help;

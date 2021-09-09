@@ -53,7 +53,7 @@ namespace PokemonData
                 int desc_index = 0;
                 for (int i = 0; i < desc_count; i++)
                 {
-                    string lang = JObject.Parse(readTask.Result)["flavor_text_entries"][i]["language"].ToString();
+                    string lang = JObject.Parse(readTask.Result)["flavor_text_entries"][i]["language"]["name"].ToString();
                     if (lang == "en")
                     {
                         desc_index = i;

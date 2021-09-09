@@ -22,3 +22,58 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.tableFixHead {
+    overflow-y: auto;
+    height: 600px;
+}
+
+    .tableFixHead thead th {
+        position: sticky;
+        top: 0px;
+    }
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background: grey;
+}
+
+html, body {
+    height: 100%;
+}
+
+.detail-grid-container {
+    margin: 50px 0px 0px 0px;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: 100px 100px 100px 100px;
+    padding: 5px;
+    vertical-align: middle;
+    font-size: 18px;
+}
+
+.detail-grid-container img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 15px;
+}
+
+.detail-grid-container p {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 5px;
+    vertical-align: middle;
+}

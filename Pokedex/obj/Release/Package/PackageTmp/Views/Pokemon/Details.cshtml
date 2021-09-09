@@ -12,13 +12,16 @@
     <title>Details</title>
 </head>
 <body>
-    <div>
-        <h4>Pokemon Details</h4>
-        <hr />
+    <div class="detail-grid-container">
+        <img src=@Model.Sprite height="200" width="200" />
 
         <dl class="dl-horizontal">
+            <dt>
+                No.
+            </dt>
+
             <dd>
-                <img src=@Model.Sprite  width="200"  height="200"/>
+                @Html.DisplayFor(model => Model.Id)
             </dd>
 
             <dt>
@@ -28,6 +31,10 @@
             <dd>
                 @Html.DisplayFor(model => model.Name)
             </dd>
+        </dl>
+
+
+        <dl class="dl-horizontal">
 
             <dt>
                 @Html.DisplayNameFor(model => model.Types)
@@ -36,10 +43,16 @@
             <dd>
                 @foreach (var item in Model.Types)
                 {
-                    @item.Type.Name <br/>
+                    @item.Type.Name <br />
                 }
             </dd>
+        </dl>
+        <div> 
+        </div>
+        <div>
 
+        </div>
+        <dl class="dl-horizontal">
             <dt>
                 @Html.DisplayNameFor(model => model.Weight)
             </dt>
@@ -57,6 +70,8 @@
             </dd>
 
         </dl>
+        <p></p>
+        <p>@Model.Description</p>
     </div>
     <p>
         @Html.ActionLink("Back to List", "Index")
